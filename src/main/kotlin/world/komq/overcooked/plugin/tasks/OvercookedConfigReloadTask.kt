@@ -4,9 +4,9 @@
  *  Licensed under the General Public License, Version 3.0. (https://opensource.org/licenses/gpl-3.0/)
  */
 
-package com.baehyeonwoo.sample.plugin.tasks
+package world.komq.overcooked.plugin.tasks
 
-import com.baehyeonwoo.sample.plugin.objects.SampleObject.plugin
+import world.komq.overcooked.plugin.objects.OvercookedManager.plugin
 import java.io.File
 
 /***
@@ -16,7 +16,7 @@ import java.io.File
  * "Until I can get ahead of myself."
  */
 
-class SampleConfigReloadTask: Runnable {
+class OvercookedConfigReloadTask: Runnable {
     private val configFile = File(plugin.dataFolder, "config.yml")
 
     private var configFileLastModified = configFile.lastModified()
